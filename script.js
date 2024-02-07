@@ -26,5 +26,8 @@ button.addEventListener("click", () => {
         currentMonth+=11
         currentDay+=31
     }
-    result.innerText = `You have been alive for ${currentYear-userYear} years, ${currentMonth-userMonth} months and ${currentDay-userDay} days.`
+    result.innerText = `You have been alive for ` +
+        (currentYear-userYear === 0 ? `` : `${currentYear-userYear} years, `) +
+        (currentMonth-userMonth === 0 ? `` : `${currentMonth-userMonth} months and `) +
+        `${currentDay-userDay} days.`
 })

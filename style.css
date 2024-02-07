@@ -29,10 +29,15 @@ body{
     border-radius: 5px;
     padding: 35px;
     max-width: 600px;
+    align-items: center;
+    flex-direction: column;
+}
+.content-container{
     display: flex;
     align-items: center;
+    margin-bottom: 33px;
 }
-.input-container input{
+.content-container input{
     flex: 1;
     padding: 16px;
     border-radius: 5px;
@@ -42,7 +47,7 @@ body{
     margin-right: 10px;
     position: relative;
 }
-.input-container input::-webkit-calendar-picker-indicator{
+.content-container input::-webkit-calendar-picker-indicator{
     position: absolute;
     left: 0;
     right: 0;
@@ -54,7 +59,7 @@ body{
     padding: 12px;
     cursor: pointer;
 }
-.input-container button{
+.content-container button{
     border: none;
     outline: none;
     border-radius: 5px;
@@ -63,4 +68,8 @@ body{
     padding: 16px 28px;
     font-size: 16px;
     cursor: pointer;
+}
+p{
+    font-size: 21px;
+    color: #cccccc;
 }
