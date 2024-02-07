@@ -1,6 +1,7 @@
-let input  = document.querySelector("input")
-let button = document.querySelector("button")
-let result = document.querySelector(".result")
+const input  = document.querySelector("input")
+const button = document.querySelector("button")
+const result = document.querySelector(".result")
+input.max = new Date().toISOString().split("T")[0]
 
 button.addEventListener("click", () => {
     let currentDate = new Date()
