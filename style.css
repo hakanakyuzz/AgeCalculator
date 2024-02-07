@@ -40,6 +40,18 @@ body{
     outline: none;
     font-size: 17px;
     margin-right: 10px;
+    position: relative;
+}
+.input-container input::-webkit-calendar-picker-indicator{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background-position: right;
+    padding: 12px;
     cursor: pointer;
 }
 .input-container button{
